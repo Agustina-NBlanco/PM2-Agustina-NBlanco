@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styleFormulario.css">
+
+</head>
+
+<body id="FormPage">
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a class="navbar-link" href="../index.html">Inicio</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="./Favoritas.html">Películas favoritas</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="./combos.html">Combos</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="https://es.wikipedia.org/wiki/Historia_del_cine"
+                        target="_blank">Historia del Cine</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <form class="form">
+        <div class="form_title class="label_form"">
+            <h2>Formulario para agregar películas nuevas</h2>
+        </div>
+        <div class="container_input">
+            <label class="label_form" for="title">Titulo de la Película</label>
+            <input class="input_form" type="text" id="title" name="title" placeholder=" Titulo" autocomplete="off">
+        </div>
+
+        <div class="container_input">
+            <label class="label_form" for="year">Año de estreno</label>
+            <input class="input_form" type="number" id="year" name="year" placeholder=" Año" autocomplete="off">
+        </div>
+
+        <div class="container_input">
+            <label class="label_form" for="director">Director</label>
+            <input class="input_form" type="text" id="director" name="Director" placeholder=" Director" autocomplete="off">
+        </div>
+
+        <div class="container_input">
+            <label class="label_form" for="duration">Duración de la Película</label>
+            <input class="input_form" type="text" id="duration" name="duration" placeholder=" Duración" autocomplete="off">
+        </div>
+
+        <div class="container_input">
+            <label class="label_form" for="genre">Género</label>
+            <input class="input_form" type="text" id="genre" name="genre" placeholder=" Género" autocomplete="off">
+        </div>
+
+        <div class="container_input">
+            <label class="label_form" for="rate">Puntuación de la película</label>
+            <input class="input_form" type="number" id="rate" name="rate" placeholder=" Puntuación" autocomplete="off">
+        </div>
+
+        <div class="container_input">
+            <label class="label_form" for="poster">Link de imagen de la Película</label>
+            <input class="input_form" type="url" id="poster" name="poster" placeholder=" imagen" autocomplete="off">
+        </div>
+
+        <div>
+            <button class="btn_form" id="btnVaciar">Vaciar campos</button>
+            <button class="btn_form" type="submit" id="btnEnviar">Enviar</button> 
+        </div>
+
+
+
+    </form>
+
+    <script src="../public/bundle.js"></script>
+</body>
+
+</html>
