@@ -2,7 +2,7 @@ const axios = require("axios");
 const renderCards = require("./renderCards.js");
 const submitForm = require("./submitForm.js");
 const clearForm = require("./clearForm.js");
-
+require("dotenv").config()
 
 
 // document.addEventListener("DOMContentLoaded", () => {
@@ -12,7 +12,9 @@ const clearForm = require("./clearForm.js");
 //     });
 // })
 
-const apiUrl = "http://localhost:3000/movies";
+const apiUrl = process.env.NODE_ENV === "production"
+        ? process.env.API_URL_PROD
+        : process.env.API_URL
 
 const fetchMovies = async () => {
         try {
