@@ -12,6 +12,13 @@ require("dotenv").config()
 //     });
 // })
 
+async function getPublicIp() {
+        const res = await axios.get("https://api.ipify.org/?format=json")
+        console.log("ip: ", res.data.ip)
+
+}
+getPublicIp()
+
 const apiUrl = process.env.NODE_ENV === "production"
         ? process.env.API_URL_PROD
         : process.env.API_URL
