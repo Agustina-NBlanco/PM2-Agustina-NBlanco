@@ -1,6 +1,6 @@
 const app = require("./src/server");
 const conDB = require("./src/config/conDB");
-const updateMongoWhiteList = require(".src/utils/updateMongoWhiteList")
+const updateMongoWhiteList = require("./src/utils/updateMongoWhiteList")
 const PORT = process.env.PORT || 3000;
 
 async function startServer() {
