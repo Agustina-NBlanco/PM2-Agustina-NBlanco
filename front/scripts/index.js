@@ -13,9 +13,9 @@ require("dotenv").config()
 // })
 
 
-const apiUrl = process.env.NODE_ENV === "production"
-        ? process.env.API_URL_PROD
-        : process.env.API_URL
+const apiUrl = window.location.hostname === "localhost"
+        ? "http://localhost:3000/movies"
+        : "https://pm2-agustina-nblanco.onrender.com/movies"
 
 const fetchMovies = async () => {
         try {
