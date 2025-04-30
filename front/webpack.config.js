@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CopyPlugin = require('copy-webpack-plugin');
 
 
 
@@ -13,7 +13,7 @@ module.exports = {
 
     },
     module: {
-        rules: [{ test: /\.css$/, use: ["style-loader", "css-loader"] }]
+        rules: []
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -32,6 +32,18 @@ module.exports = {
             template: './pages/formulario.html',
             filename: 'formulario.html'
         }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: "styles",
+                    to: "styles"
+                },
+                {
+                    from: "images",
+                    to: "images"
+                }
+            ]
+        })
 
     ]
 };

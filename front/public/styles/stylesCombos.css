@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(../images/fondoDeBody.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.header-personal {
+    background-color: #e4181e;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    
+}
+
+
+
+.navbar-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.navbar-item {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-link {
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(50, 48, 177);
+}
+
+.carousel{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.carousel-item{
+    object-fit: cover;
+}
+
+.carousel-caption{
+    color: black;
+}
