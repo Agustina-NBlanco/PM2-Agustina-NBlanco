@@ -33,6 +33,10 @@ a {
     color: white;
 }
 
+.favTitle{
+    text-align: center;
+}
+
 
 .header {
     background-color: #e4181e;
