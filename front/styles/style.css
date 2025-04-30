@@ -1,3 +1,7 @@
+@import './styleFormulario.css';
+@import './stylesCombos.css';
+
+
 html {
     box-sizing: border-box;
 }
@@ -33,7 +37,7 @@ a {
     color: white;
 }
 
-.favTitle{
+.favTitle {
     text-align: center;
 }
 
@@ -54,7 +58,7 @@ a {
 
 }
 
-.navbar-item{
+.navbar-item {
     flex: 1;
     text-align: center;
 }
@@ -72,7 +76,7 @@ a {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-   
+
 }
 
 .card {
@@ -89,7 +93,7 @@ a {
 
 }
 
- .main-title{
+.main-title {
     text-align: center;
 
- }
+}
